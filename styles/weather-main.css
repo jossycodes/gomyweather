@@ -1,0 +1,122 @@
+body {
+  transition: 0.3s;
+}
+#nav {
+  background: var(--navground); 
+  transition: 0.3s; 
+  position: fixed;
+  top: 0;
+  z-index: 5; 
+}
+
+.active {
+  color: limegreen !important;    
+}
+button {
+  border: 1px solid transparent !
+  important;
+  background:;
+  /*#2176ff1b;*/
+  color: #1a2425;
+  padding: 0.3em !important;
+}
+.swal,.toast{
+  backdrop-filter: drop-shadow(4px 4px 10px blue) !important;
+  background: var(--primary) !important;
+  color: var(--color) !important; 
+}  
+.swal div {
+  line-height: 150%;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: var(--color) !important;
+  overflow: hidden !important; 
+}
+.swal button {
+  background: limegreen !important;
+  padding: 15px 37vw !important;
+  border-radius: 7px; 
+}
+.swal button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+.swal h2 {
+  color: var(--color) !important;   
+}
+.toast {
+  font-size: 0.8em !important;
+} 
+.swal .uk-button {
+  background: limegreen !important;
+  color: #fff;
+  padding: 0 !important;  
+}
+.weather-icon {
+  height: 9rem;
+  width: auto;
+}
+.hourly-weather-card {
+  min-width: 200px !important;
+  background: #ffffff28;  
+  color: white;
+}
+.hourly-weather-card h6 {
+  color: white !important;  
+}
+.daily-weather-card {
+  min-width: 280px;   
+  background: #f7f7f740;     
+  color: white !important;  
+}
+.daily-weather-card h5, h6 {
+  /*color: white;*/
+}
+.daily-weather-card img {
+  height: auto;
+  width: 70%;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+}
+#mainCard,#otherInfoCard,#dailyWeatherCard {
+  background: var(--primary);
+  transition: 0.3s;  
+}
+#mainCard h5 {
+  color: var(--color) !important; 
+}
+#dailyWeatherCard {
+  background-image: linear-gradient(to bottom right, limegreen, deepskyblue);
+  color: #fff; 
+}
+#dailyWeatherCard h4,h5,h6 {
+  color: #fff !important;   
+}
+#hourlyWeatherContainer {
+  display: flex;
+  overflow-x: scroll;
+  background-image: linear-gradient(to bottom right,  var(--accent), limegreen);
+  padding: 10px 0 !important; 
+} 
+#hourlyWeatherContainer img {
+  height: 4.5em;
+  width: auto;
+ /* -webkit-filter: drop-shadow(3px 3px 3px #222);*/
+}
+#otherInfoCard img {
+  height: 3em;
+  width: auto;
+}
+#dropdown {
+  background: var(--primary); 
+  color: var(--color) !important; 
+}
+#dropdown ul li {
+  padding: 6px 0 !important;
+}
+.uk-nav-header {
+  color: var(--color) !important;
+} 
+h4,h5,h6 {
+  color: var(--color);  
+}
