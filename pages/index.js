@@ -478,8 +478,8 @@ export default function Weather() {
    <button type="button" className="uk-button flex-center uk-button-default   bi-three-dots-vertical uk-border-rounded" style={ { fontSize: '1.6em',
         color: 'var(--color)' }}></button>
    <div uk-dropdown id="dropdown">
-    <ul class="uk-nav uk-dropdown-nav">
-    <li class="uk-nav-header">Units</li>
+    <ul className="uk-nav uk-dropdown-nav">
+    <li className="uk-nav-header">Units</li>
         <li onClick={() => { setUnit(metric);
           storeUnit(metric);
         }} className={(unit.name == "metric")? 'active': ''}>Metric (°C)&nbsp;</li>
