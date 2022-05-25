@@ -13,6 +13,7 @@ import Toast from '/components/toasts'
 import {
   useTheme
 } from 'next-themes'
+import UIkit from 'uikit'
 export default function Weather() {
 
 
@@ -102,8 +103,8 @@ export default function Weather() {
   useEffect(() => {
 
     setSafe(true)
-    setUnit(getUnit() || metric);
-    UIkit.dropdown('#dropdown');
+    setUnit(getUnit() || metric); 
+    UIkit.dropdown('#dropdown');  
 
     //UIkit.sticky('#nav');
 
@@ -448,12 +449,12 @@ export default function Weather() {
 
 
   return (
-    <div>
+    <div> 
     <Head>
      <title>Gomyweather</title>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
     </Head>
-     <Script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js" strategy="beforeInteractive" />
+     
    
      <div id="nav" className="uk-padding-small-top uk-padding-remove-bottom uk-box-shadow-medium">
       <div className="uk-padding-small ">
@@ -478,8 +479,8 @@ export default function Weather() {
    <button type="button" className="uk-button flex-center uk-button-default   bi-three-dots-vertical uk-border-rounded" style={ { fontSize: '1.6em',
         color: 'var(--color)' }}></button>
    <div uk-dropdown id="dropdown">
-    <ul class="uk-nav uk-dropdown-nav">
-    <li class="uk-nav-header">Units</li>
+    <ul className="uk-nav uk-dropdown-nav">
+    <li className="uk-nav-header">Units</li> 
         <li onClick={() => { setUnit(metric);
           storeUnit(metric);
         }} className={(unit.name == "metric")? 'active': ''}>Metric (°C)&nbsp;</li>
