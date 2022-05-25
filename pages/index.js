@@ -14,6 +14,9 @@ import {
   useTheme
 } from 'next-themes'
 
+import UIkit from 'uikit'
+
+
 export default function Weather() {
 
 
@@ -103,8 +106,8 @@ export default function Weather() {
   useEffect(() => {
 
     setSafe(true)
-    setUnit(getUnit() || metric);
-    UIkit.dropdown('#dropdown');
+    setUnit(getUnit() || metric); 
+    UIkit.dropdown('#dropdown');  
 
     //UIkit.sticky('#nav');
 
@@ -449,12 +452,12 @@ export default function Weather() {
 
 
   return (
-    <div>
+    <div> 
     <Head>
      <title>Gomyweather</title>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
     </Head>
-     <Script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js" strategy="beforeInteractive" />
+     
    
      <div id="nav" className="uk-padding-small-top uk-padding-remove-bottom uk-box-shadow-medium">
       <div className="uk-padding-small ">
@@ -480,6 +483,8 @@ export default function Weather() {
         color: 'var(--color)' }}></button>
    <div uk-dropdown id="dropdown">
     <ul className="uk-nav uk-dropdown-nav">
+
+    <li className="uk-nav-header">Units</li> 
     <li className="uk-nav-header">Units</li>
         <li onClick={() => { setUnit(metric);
           storeUnit(metric);
