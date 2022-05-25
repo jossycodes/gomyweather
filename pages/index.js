@@ -13,7 +13,10 @@ import Toast from '/components/toasts'
 import {
   useTheme
 } from 'next-themes'
+
 import UIkit from 'uikit'
+
+
 export default function Weather() {
 
 
@@ -480,7 +483,9 @@ export default function Weather() {
         color: 'var(--color)' }}></button>
    <div uk-dropdown id="dropdown">
     <ul className="uk-nav uk-dropdown-nav">
+
     <li className="uk-nav-header">Units</li> 
+    <li className="uk-nav-header">Units</li>
         <li onClick={() => { setUnit(metric);
           storeUnit(metric);
         }} className={(unit.name == "metric")? 'active': ''}>Metric (°C)&nbsp;</li>
