@@ -484,7 +484,6 @@ export default function Weather() {
    <div uk-dropdown id="dropdown">
     <ul className="uk-nav uk-dropdown-nav">
 
-    <li className="uk-nav-header">Units</li> 
     <li className="uk-nav-header">Units</li>
         <li onClick={() => { setUnit(metric);
           storeUnit(metric);
